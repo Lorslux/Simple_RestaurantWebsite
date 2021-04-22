@@ -1,0 +1,140 @@
+/* Lorena Mondini - Lavoro scritto 1: sweb 2021 */
+@import "fonts.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: "Nexa";
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #bd7e55;
+}
+
+p {
+  margin: 0;
+}
+
+#container {
+  background-image: url(https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1287&q=80);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+header {
+  background-color: rgba(94, 37, 7, .8);
+  color: #ccc;
+  padding: 10px;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 5px;
+  width: 140px;
+  color: #ccc;
+}
+
+nav ul li {
+  border-bottom: 2px solid transparent;
+  text-align: center;
+}
+
+nav ul li:hover,
+nav ul li.active {
+  border-bottom-color: #bd7e55;
+}
+
+nav ul li:hover a,
+nav ul li.active a {
+  color: #bd7e55;
+}
+
+section {
+  padding: 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(94, 37, 7, .8);
+  color: #ccc;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.box {
+  position: relative;
+  min-width: 24em;
+  max-width: 35%;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  padding: 80px 10px 10px;
+}
+
+.box a {
+  color: #000;
+}
+
+.box-title {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  right: 0;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box-img {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.box-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.box-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-text {
+  flex-grow: 2;
+  width: 66%;
+}
+
+.box-link {
+  flex-grow: 1;
+  width: 33%;
+  text-align: center;
+}
